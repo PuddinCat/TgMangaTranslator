@@ -13,6 +13,8 @@ cd TgMangaTranalator
 # 然后设置TG bot的Token和manga-image-translator的地址。。。
 export TELEGRAM_BOT_TOKEN="xxx"
 export MANGA_TRANSLATOR_API="http://127.0.0.1:5003"
+# 然后安装一些库
+pip install requirements.txt
 # 然后Python，启动！
 python main.py
 ```
