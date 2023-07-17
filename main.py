@@ -92,7 +92,7 @@ async def translate_manga_request(src: Path) -> Path:
             resp = await client.post(
                 f"{MANGA_TRANSLATOR_API}/run",
                 files={"file": (src.name, file)},
-                data={"translator": "gpt3.5-evil"},
+                data={"translator": "gpt3.5-evil", "size": "S"},
                 timeout=120,
             )
         photo_task_id = resp.json()["task_id"]
